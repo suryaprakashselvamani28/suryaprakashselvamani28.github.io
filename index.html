@@ -36,11 +36,13 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
-  <body>
+  <body data-aos-easing="ease-out" data-aos-duration="700" data-aos-delay="0">
     <!-- ================= NAVBAR ================= -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#hero"> <span>Surya</span> Prakash </a>
+        <a class="navbar-brand" href="#hero">
+          <span>Surya</span> Prakash
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -82,16 +84,26 @@
       <div class="container">
         <div class="hero-inner" data-aos="fade-up">
           <!-- Left -->
-          <div>
+          <div class="hero-left">
             <div class="hero-badge">
-              <i class="fas fa-bolt"></i>Python Developer
+              <i class="fas fa-bolt"></i> Full-Stack Python & UI Developer
             </div>
-            <h1 class="hero-heading">Hi, I'm <span>Surya Prakash</span></h1>
+            <h1 class="hero-heading">
+              Hi, I'm <span>Surya Prakash</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Full-Stack Python & UI developer with
+              <span class="about-highlight" id="expYearsHero"></span>
+              of experience building scalable backends, REST APIs and
+              responsive web interfaces on AWS.
+            </p>
+
             <div class="typed-wrapper">
               I’m
               <span
                 class="typed"
-                data-typed-items="an AWS Engineer,a Python Programmer,a Creative Designer,a Travel Lover,a Food Buff"
+                data-typed-items="a Full-Stack Python Developer,a Backend & UI Engineer,an AWS & Cloud Enthusiast,a REST API Builder,a Creative Frontend Developer"
               ></span>
             </div>
 
@@ -111,7 +123,7 @@
             <div class="hero-meta">
               <div class="hero-meta-block">
                 <span>Primary Stack</span><br />
-                <span>Python · FastAPI · ReactJS · AWS </span>
+                <span>Python · FastAPI · ReactJS · AWS</span>
               </div>
               <div class="hero-meta-block">
                 <span>Location</span><br />
@@ -121,7 +133,11 @@
           </div>
 
           <!-- Right -->
-          <div class="hero-avatar-wrap" data-aos="zoom-in" data-aos-delay="150">
+          <div
+            class="hero-avatar-wrap"
+            data-aos="zoom-in"
+            data-aos-delay="150"
+          >
             <div class="hero-avatar-orbit"></div>
             <div class="hero-avatar-card">
               <img src="assets/img/surya1.JPG" alt="Surya Prakash" />
@@ -139,8 +155,8 @@
             <div class="pill-label"><i class="fas fa-user"></i> About</div>
             <h2>Who I Am</h2>
             <p>
-              A problem-solver focused on building clean, reliable backends and
-              cloud solutions.
+              A problem-solver focused on building clean, reliable backends,
+              intuitive UIs and cloud solutions.
             </p>
           </div>
 
@@ -152,19 +168,44 @@
                   I’m a
                   <span class="about-highlight">Python Developer</span> with
                   <span class="about-highlight" id="expYearsAbout"></span> of
-                  experience working on backend services, automation, and cloud
-                  infrastructure. I work primarily with
-                  <span class="about-highlight"
-                    >Python, FastAPI, PostgreSQL, MySQL, Snowflake, and
-                    AWS</span
-                  >. I enjoy converting business use cases into robust, scalable
-                  solutions.
+                  experience working on backend services, REST APIs, automation
+                  and cloud infrastructure. I also enjoy crafting responsive UIs
+                  using HTML, CSS, JavaScript and React.
                 </p>
                 <p class="about-text mt-3">
                   I love collaborating with teams, breaking down complex
-                  problems, and continuously learning new tools and patterns to
+                  problems and continuously learning new tools and patterns to
                   refine my craft.
                 </p>
+
+                <div class="about-facts">
+                  <div class="fact-pill">
+                    <span class="fact-label"
+                      ><i class="fas fa-briefcase me-1"></i>Experience</span
+                    >
+                    <span class="fact-value" id="expYearsBadge"></span>
+                  </div>
+                  <div class="fact-pill">
+                    <span class="fact-label"
+                      ><i class="fas fa-user-tie me-1"></i>Role</span
+                    >
+                    <span class="fact-value">AWS & Python Engineer</span>
+                  </div>
+                  <div class="fact-pill">
+                    <span class="fact-label"
+                      ><i class="fas fa-envelope me-1"></i>Email</span
+                    >
+                    <span class="fact-value text-break"
+                      >suryaprakashselvamani@gmail.com</span
+                    >
+                  </div>
+                  <div class="fact-pill">
+                    <span class="fact-label"
+                      ><i class="fas fa-location-dot me-1"></i>City</span
+                    >
+                    <span class="fact-value">Kumbakonam</span>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -185,8 +226,10 @@
                     <td>B.Tech, Information Technology</td>
                   </tr>
                   <tr>
-                    <td>Primary Email</td>
-                    <td class="text-break">suryaprakashselvamani@gmail.com</td>
+                    <td><i class="fas fa-envelope me-2"></i>Primary Email</td>
+                    <td class="text-break">
+                      suryaprakashselvamani@gmail.com
+                    </td>
                   </tr>
                   <tr>
                     <td>Cloud Focus</td>
@@ -194,7 +237,7 @@
                   </tr>
                   <tr>
                     <td>Interests</td>
-                    <td>System Design, Automation, Travel & Food</td>
+                    <td>System Design, Automation, UI, Travel & Food</td>
                   </tr>
                 </table>
               </div>
@@ -358,7 +401,7 @@
               <div class="list-card-body">
                 Built a web app that displays live weather data for a given
                 location using the OpenWeatherMap API. Focused on clean UI, API
-                integration, and error handling.
+                integration and error handling.
               </div>
             </div>
 
@@ -381,7 +424,7 @@
               <div class="list-card-title">Stock Maintenance System</div>
               <div class="list-card-body">
                 Implemented a stock management system with features like adding,
-                updating, tagging, and removing stocks. Designed for clear
+                updating, tagging and removing stocks. Designed for clear
                 workflows and easy tracking inside organizations.
               </div>
             </div>
